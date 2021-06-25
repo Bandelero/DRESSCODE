@@ -1,0 +1,7 @@
+/* Add a border around the title. I used google fonts for Rock Salt */
+h1{
+	color: #000000;
+	font-size: 75px;
+	font-family: 'Rock Salt', cursive;
+	text-align: center;
+}
