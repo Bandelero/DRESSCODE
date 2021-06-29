@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <title>DressCode</title>
-  <link rel="stylesheet" href="style.css">
   <!-- BootStrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <!-- JavaScript Bundle with Popper -->
@@ -13,23 +12,103 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="webpageTitle">
-  
+
+    <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">About</h4>
+          <p class="text-muted">Jen makes the best dresses in the world. Although, she couldn't do it without her best stoner, Andrew</p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">Contact Me</h4>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">Email me</a></li>
+            <li><a href="#" class="text-white">Like on Instagram</a></li>
+            <li><a href="#" class="text-white">Link on Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-light bg-light shadow-sm">
+    <div class="container">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+        <strong>DRESSCODE</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
   </div>
 
 
   <div class="container">
     <h1>DRESSCODE</h1>
 
-
-    <div class="d-grid gap-2 col-6 mx-auto">
-        <button class= "btn btn-outline-dark btn-lg" type="button" name="button">Book Appointment</button>
+    <!-- Submit Button -->
+    <div class="d-grid gap-2 col-6 mx-auto" style="padding-top: 75px;padding-bottom: 75px">
+        <button class= "btn btn-outline-dark btn-lg" type="button" name="button" style="border:5px solid #000000;">Book Appointment</button>
     </div>
 
+    <h1>Services</h1>
 
+
+    <h1>Gallery</h1>
+
+    <!-- First Name - Last Name - Email - Address-->
+<form class="row g-3" style="padding-top: 75px;padding-bottom: 75px">
+  <div class="col-md-6">
+    <label for="inputFirstName" class="form-label">First name</label>
+    <input type="text" class="form-control" id="inputFirstName"  placeholder="First Name" style="color:#000000; border:1.5px solid #000000;" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div>
+  <div class="col-md-6">
+    <label for="inputLastName" class="form-label">Last name</label>
+    <input type="text" class="form-control" id="inputLastName"  placeholder="Last Name" style="color:#000000; border:1.5px solid #000000;" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div>
+    <div class="col-md-12">
+    <label for="inputEmail4" class="form-label">Email</label>
+    <input type="email" class="form-control" id="inputEmail4" placeholder="Abc123@gmail.com" style="color:#000000; border:1.5px solid #000000;" required>
+  </div>
+  <div class="col-12">
+    <label for="inputAddress" class="form-label">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" style="color:#000000; border:1.5px solid #000000;" >
+  </div>
+  <div class="col-12">
+    <label for="inputAddress2" class="form-label">Address 2</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" style="color:#000000; border:1.5px solid #000000;" >
+  </div>
+  <div class="col-md-6">
+    <label for="inputCity" class="form-label">City</label>
+    <input type="text" class="form-control" id="inputCity" placeholder="City" style="color:#000000; border:1.5px solid #000000;" >
+  </div>
+  <div class="col-md-4">
+    <label for="inputState" class="form-label">State</label>
+    <select id="inputState" class="form-select" style="color:#000000; border:1.5px solid #000000;" >
+      <option selected>Choose...</option>
+      <option>CA</option>
+    </select>
+  </div>
+  <div class="col-md-2">
+    <label for="inputZip" class="form-label">Zip</label>
+    <input type="text" class="form-control" id="inputZip" placeholder="#####" style="color:#000000; border:1.5px solid #000000;" >
+  </div>
+  <div class="col-12">
+    <button class= "btn btn-outline-dark btn-lg" type="submit" style="border:3px solid #000000;">Submit form</button>
+  </div>
+</form>
 
   </div>
 
