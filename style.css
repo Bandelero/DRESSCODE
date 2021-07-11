@@ -7,10 +7,24 @@ h1{
 	padding-top:  165px;
 }
 
+hr { background-color: red; height: 1px; border: 0; }
+
 #frontPageTitle {
 	padding-top:  10px;
 	font-size: 95px;
 }
+
+#servicePageTitle{
+	padding-top:  50px;
+	font-size: 75px;	
+}
+
+#galleryPageTitle{
+	padding-top:  50px;
+	padding-bottom: 50px;
+	font-size: 75px;	
+}
+
 
 .girl_RedLipstick{
 	display: block;
