@@ -11,16 +11,16 @@ hr { background-color: red; height: 1px; border: 0; }
 
 #frontPageTitle {
 	padding-top:  10px;
-	font-size: 95px;
+	font-size: 85px;
 }
 
 #servicePageTitle{
-	padding-top:  50px;
+	padding-top:  30px;
 	font-size: 75px;	
 }
 
 #galleryPageTitle{
-	padding-top:  50px;
+	padding-top:  30px;
 	padding-bottom: 50px;
 	font-size: 75px;	
 }
@@ -31,6 +31,8 @@ hr { background-color: red; height: 1px; border: 0; }
   	margin-left: auto;
  	margin-right: auto;
 }
+
+
 
 /* Dropdown Button */
 .dropbtn {
@@ -81,3 +83,5 @@ font-size: 15px;
 .buttonText {
 font-size: 15px;
 }
+
+

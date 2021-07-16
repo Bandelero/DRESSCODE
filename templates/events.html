@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+
+  <!-- The white Navbar is below -->
+      <div class="navbar navbar-light bg-light shadow-sm">
+            <div class="container">
+              <a href="{{ url_for('index')}}" class="navbar-brand d-flex align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="9" cy="13" r="4"/></svg>
+              <strong>DRESSCODE</strong>
+              </a>
+
+              <div class="dropdown">
+                  <button class="navbar-toggler" type="button" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                          <div class="dropdown-content">
+                            <a href="{{ url_for('gallery')}}" class="buttonText">Gallery</a>
+                            <a href="{{ url_for('services')}}" class="buttonText">Services</a>
+                            <a href="{{ url_for('form')}}" class="buttonText">Book Appointment</a>
+                          </div>
+              </div>
+            </div>
+      </div>
+
+
+
+
+{% endblock %}
