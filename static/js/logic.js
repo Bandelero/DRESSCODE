@@ -6,7 +6,7 @@ gsap.timeline()
       rotateY: (i)=> i*-36,
       transformOrigin: '50% 50% 500px',
       z: -500,
-      backgroundImage:(i)=>'url(https://cdn.discordapp.com/attachments/203363625652584450/867897907629391932/cat1.jpg)',
+      backgroundImage:(i)=>'url(https://raw.githubusercontent.com/Bandelero/DRESSCODE/main/static/Images/'+(i+1)+'.jpg)',
       backgroundPosition:(i)=>getBgPos(i),
       backfaceVisibility:'hidden'
     })    
