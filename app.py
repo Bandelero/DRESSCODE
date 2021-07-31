@@ -10,7 +10,7 @@ import os
 
 app = Flask(__name__)
 
-api_key = "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"
+api_key = "SG.PZwtUKfyQi6ZwExr7H-9VA.lcbDtyAViPAC90t0P1SADc79JiDJ7VizfWbAwSUm6fQ"
 
 
 
