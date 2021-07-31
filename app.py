@@ -7,7 +7,7 @@ import os
 
 app = Flask(__name__)
 
-api_key = os.environ.get('sg', None)
+api_key = os.environ.get('sg')
 
 @app.route('/')
 def index():
