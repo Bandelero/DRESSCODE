@@ -7,7 +7,6 @@ import os
 
 app = Flask(__name__)
 
-
 api_key = os.environ.get('sg', None)
 
 @app.route('/')
@@ -20,15 +19,15 @@ def form():
 		print(request.form)
 		try:
 			message = Mail(
-		    from_email='apetermz@gmail.com',
-		    to_emails='apetermz@gmail.com',
-		    subject='Jenyas Hair and Makeup Client Submission',
-		    html_content=f'{request.form["first"]} {request.form["last"]} {request.form["phone"]} <br> {request.form["email"]} {request.form["event"]} {request.form["danceCategory"]}')
-		    sg = SendGridAPIClient(api_key)
-		    response = sg.send(message)
-		    print(response.status_code)
-		    print(response.body)
-		    print(response.headers)
+			from_email='apetermz@gmail.com',
+			to_emails='apetermz@gmail.com',
+			subject='Jenyas Hair and Makeup Client Submission',
+			html_content=f'{request.form["first"]} {request.form["last"]} {request.form["phone"]} <br> {request.form["email"]} {request.form["event"]} {request.form["danceCategory"]}')
+			sg = SendGridAPIClient(api_key)
+			response = sg.send(message)
+			print(response.status_code)
+			print(response.body)
+			print(response.headers)
 		except Exception as e:
 		    print(e.message)
 		# return redirect(url_for('thankyou.html'))
