@@ -14,16 +14,16 @@ hr { background-color: red; height: 1px; border: 0; }
 	font-size: 85px;
 }
 
-#servicePageTitle{
-	padding-top:  30px;
+.servicePageTitle{
+	padding-top:  15px;
 	font-size: 75px;	
 }
 
-#galleryPageTitle{
-	padding-top:  30px;
-	padding-bottom: 50px;
+/*#galleryPageTitle{
+	padding-top:  60px;
+	padding-bottom: 5px;
 	font-size: 75px;	
-}
+}*/
 
 
 .girl_RedLipstick{
@@ -32,6 +32,9 @@ hr { background-color: red; height: 1px; border: 0; }
  	margin-right: auto;
 }
 
+.form-label {
+  font-weight: bold;
+}
 
 
 /* Dropdown Button */
@@ -104,10 +107,6 @@ font-size: 15px;
   position: absolute;
 }
 */
-
-
-
-
 
 .container1 {
   perspective: 2000px;

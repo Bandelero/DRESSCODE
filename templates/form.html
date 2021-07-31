@@ -7,7 +7,7 @@
             <div class="container">
               <a href="{{ url_for('index')}}" class="navbar-brand d-flex align-items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="9" cy="13" r="4"/></svg>
-                <strong>DRESSCODE</strong>
+                <strong>Jenya's Hair and Makeup</strong>
               </a>
 
                 <div class="dropdown">
@@ -25,7 +25,7 @@
     
 
     <!-- First Name - Last Name - Email - Address-->
-<form class="row g-3" action="{{url_for('thank_you')}}" style="padding-top: 75px;padding-bottom: 75px">
+<form class="row g-3" action="" method="post" style="padding-top: 75px;padding-bottom: 75px">
   <div class="col-md-6">
     <label for="inputFirstName" class="form-label">First name</label>
     <input type="text" name="first" class="form-control" id="inputFirstName"  placeholder="First Name" style="color:#000000; border:1.5px solid #000000;" required>
@@ -40,22 +40,89 @@
       Looks good!
     </div>
   </div>
+    <div class="col-md-6">
+    <label for="inputPhoneNumber" class="form-label">Phone number</label>
+    <input type="text" name="phone" class="form-control" id="inputLastName"  placeholder="Last Name" style="color:#000000; border:1.5px solid #000000;" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div>
     <div class="col-md-12">
     <label for="inputEmail4" class="form-label">Email</label>
     <input type="email" name="email" class="form-control" id="inputEmail4" placeholder="Abc123@gmail.com" style="color:#000000; border:1.5px solid #000000;" required>
   </div>
-<!--   <div class="col-12">
+  <br>
+   <div class="col-12">
   <div class="col-md-4">
-    <label for="inputState" class="form-label">State</label>
-    <select id="inputState" class="form-select" style="color:#000000; border:1.5px solid #000000;" >
+    <label for="inputEvent" class="form-label">Upcoming Event</label>
+    <select id="inputEvent" name="event" class="form-select" style="color:#000000; border:1.5px solid #000000;" >
       <option selected>Choose...</option>
-      <option>CA</option>
+      <option>Irvine Event</option>
+      <option>Other</option>
     </select>
   </div>
-  <div class="col-md-2">
-    <label for="inputZip" class="form-label">Zip</label>
-    <input type="text" class="form-control" id="inputZip" placeholder="#####" style="color:#000000; border:1.5px solid #000000;" >
-  </div>-->
+  <br>
+     <div class="col-12">
+  <div class="col-md-4">
+    <label for="inputCategory" class="form-label">Dance Category</label>
+    <select id="inputCategory" name="danceCategory" class="form-select" style="color:#000000; border:1.5px solid #000000;" >
+      <option selected>Choose...</option>
+      <option>Junior</option>
+      <option>Youth</option>
+      <option>Amateur</option>
+      <option>Pro AM</option>
+      <option>Professional</option>
+      <option>Senior</option>
+      <option>Other</option>
+    </select>
+  </div>
+  <br>
+     <div class="col-12">
+  <div class="col-md-4">
+    <label for="inputStyle" class="form-label">Style</label>
+    <select id="inputStyle" name ="styleCategory" class="form-select" style="color:#000000; border:1.5px solid #000000;" >
+      <option selected>Choose...</option>
+      <option>Ballroom</option>
+      <option>Latin</option>
+      <option>Smooth</option>
+      <option>Rhythm</option>
+      <option>Standard</option>
+      <option>Showdance</option>
+      <option>Exhibition</option>
+      <option>Showdance/Theatre Arts</option>
+      <option>Other</option>
+    </select>
+  </div>
+  <br>
+    <div class="col-md-4">
+    <label for="inputStyle" class="form-label">Level</label>
+    <select id="inputStyle" name="level" class="form-select" style="color:#000000; border:1.5px solid #000000;" >
+      <option selected>Choose...</option>
+      <option>Newcomer</option>
+      <option>Bronze</option>
+      <option>Silver</option>
+      <option>Gold</option>
+      <option>Open</option>
+
+    </select>
+  </div>
+
+  <br>
+
+  <h5 class="form-label">Choose Appointment Types</h5>
+
+  <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="same-address">
+    <label class="form-check-label" for="Hair">Hair</label>
+  </div>
+
+  <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="save-info">
+    <label class="form-check-label" for="Makeup">Makeup</label>
+  </div>
+
+  <br>
+
   <div class="col-12">
     <button class= "btn btn-outline-dark btn-lg" type="submit" value= "Submit Form" style="border:3px solid #000000;">Submit form</button>
   </div>
