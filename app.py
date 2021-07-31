@@ -4,44 +4,11 @@ from flask_sqlalchemy import SQLAlchemy
 from sendgrid import SendGridAPIClient
 from sendgrid.helpers.mail import Mail
 import os
-# from flask_migrate import Migrate
-
-# basedir = os.path.abspath(os.path.dirname(__file__))
 
 app = Flask(__name__)
 
-api_key = "SG.PZwtUKfyQi6ZwExr7H-9VA.lcbDtyAViPAC90t0P1SADc79JiDJ7VizfWbAwSUm6fQ"
 
-
-
-#Database info
-# app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///'+os.path.join(basedir, 'data.sqlite')
-# app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-
-# db = SQLAlchemy(app)
-
-# Migrate(app,db)
-####################################################
-
-# class data_import(db.Model):
-
-# 	__tablename__ = 'Bookings'
-
-# 	id = db.Column(db.Integer,primary_key=True)
-# 	email = db.Column(db.Text)
-# 	first_name = db.Column(db.Text)
-# 	last_name = db.Column(db.Text)
-
-# 	def __init__(self,email,first_name,last_name):
-# 		self.email = email
-# 		self.first_name = first_name
-# 		self.last_name = last_name
-
-# 	def __repr__(self):
-# 		return f"Email: {self.email} \n First Name: {self.first_name} \n Last Name: {self.last_name}"
-
-
-
+api_key = os.environ.get('sg', None)
 
 @app.route('/')
 def index():
@@ -53,7 +20,7 @@ def form():
 		print(request.form)
 		message = Mail(
 		    from_email='apetermz@gmail.com',
-		    to_emails='jenbabe_18_00@yahoo.com',
+		    to_emails='apetermz@gmail.com',
 		    subject='Jenyas Hair and Makeup Client Submission',
 		    html_content=f'{request.form["first"]} {request.form["last"]} {request.form["phone"]} <br> {request.form["email"]} {request.form["event"]} {request.form["danceCategory"]}')
 		try:
