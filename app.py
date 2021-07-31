@@ -22,7 +22,7 @@ def form():
 			from_email='apetermz@gmail.com',
 			to_emails='apetermz@gmail.com',
 			subject='Jenyas Hair and Makeup Client Submission',
-			html_content=f'{request.form["first"]} {request.form["last"]} {request.form["phone"]} <br> {request.form["email"]} {request.form["event"]} {request.form["danceCategory"]}')
+			html_content=f'{request.form["first"]} {request.form["last"]} {request.form["phone"]} <br> {request.form["email"]} {request.form["event"]} {request.form["danceCategory"]} <br> {request.form["type1"]} {request.form["type2"]}')
 			sg = SendGridAPIClient(api_key)
 			response = sg.send(message)
 			print(response.status_code)

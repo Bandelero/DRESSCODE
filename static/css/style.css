@@ -25,6 +25,9 @@ hr { background-color: red; height: 1px; border: 0; }
 	font-size: 75px;	
 }*/
 
+.serviceAlign{
+  text-align: center;
+}
 
 .girl_RedLipstick{
 	display: block;
