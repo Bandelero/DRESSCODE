@@ -60,3 +60,5 @@ function dragEnd(e){
 function getBgPos(i){ //returns the background-position string to create parallax movement in each image
   return ( 100-gsap.utils.wrap(0,360,gsap.getProperty('.ring', 'rotationY')-180-i*30)/360*500 )+'px 0px';
 }
+
+/*changed 36 to 30 and 500 to 1000*/
