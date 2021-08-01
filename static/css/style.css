@@ -9,6 +9,17 @@ h1{
 
 hr { background-color: red; height: 1px; border: 0; }
 
+body {
+  min-width: 50%;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 #frontPageTitle {
 	padding-top:  10px;
 	font-size: 85px;

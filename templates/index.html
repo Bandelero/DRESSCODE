@@ -9,14 +9,15 @@
             <div class="container">
               <a href="{{ url_for('index')}}" class="navbar-brand d-flex align-items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="9" cy="13" r="4"/></svg>
-                <strong>Jenya's Hair and Makeup</strong>
+                <strong>Jenyas Hair and Makeup</strong>
               </a>
 
                     <div class="dropdown">
                         <button class="navbar-toggler" type="button" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                             <div class="dropdown-content">
-                              <a href="{{ url_for('services')}}" class="buttonText">Services and Pricing</a>
+                              <a href="{{ url_for('about')}}" class="buttonText">About Us</a>
                               <a href="{{ url_for('gallery')}}" class="buttonText">Gallery</a>
+                              <a href="{{ url_for('services')}}" class="buttonText">Services</a>
                               <a href="{{ url_for('events')}}" class="buttonText">Events</a>
                               <a href="{{ url_for('form')}}" class="buttonText">Book Appointment</a>
                             </div>
@@ -44,7 +45,7 @@
 
   <!-- Footer -->
 
-  <div class="bg-dark" id="navbarFooter">
+<!--   <div class="bg-dark" id="navbarFooter">
     <div class="container">
       <div class="row">
         <div class="col-sm-8 col-md-7 py-4">
@@ -52,7 +53,7 @@
           <p class="text-muted">Jenya hair and makeup is a mobile beauty boutique specializing in ballroom, wedding and special events hair and makeup. Our goal is to provide you with an exceptional service and to make you look and feel your best on the dance floor and your special day. We will help you create an image that reflects your personality.</p>
         </div>
         <div class="col-sm-4 offset-md-1 py-4">
-          <h4 class="text-white">Contact Me</h4>
+          <h4 class="text-white">Contact Us</h4>
           <ul class="list-unstyled">
             <li><a href="#" class="text-white">Email me</a></li>
             <li><a href="https://www.instagram.com/jenya_hairandmakeup/" class="text-white">Like on Instagram</a></li>
@@ -61,64 +62,8 @@
         </div>
       </div>
     </div>
-  </div> 
+  </div>  -->
 
-
-
-
-<!-- Form Section -->
-<!-- First Name - Last Name - Email - Address-->
-
- <!--  <a name="formTarget">
-  <h4 style="padding-top: 150px;padding-bottom: 10px">Please input the information below and you will be receiving a response shortly</h4>
-  </a>
-    
-<form class="row g-3" style="padding-top: 20px;padding-bottom: 75px">
-  <div class="col-md-6">
-    <label for="inputFirstName" class="form-label">First name</label>
-    <input type="text" class="form-control" id="inputFirstName"  placeholder="First Name" style="color:#000000; border:1.5px solid #000000;" required>
-    <div class="valid-feedback">
-      Looks good!
-    </div>
-  </div>
-  <div class="col-md-6">
-    <label for="inputLastName" class="form-label">Last name</label>
-    <input type="text" class="form-control" id="inputLastName"  placeholder="Last Name" style="color:#000000; border:1.5px solid #000000;" required>
-    <div class="valid-feedback">
-      Looks good!
-    </div>
-  </div>
-    <div class="col-md-12">
-    <label for="inputEmail4" class="form-label">Email</label>
-    <input type="email" class="form-control" id="inputEmail4" placeholder="Abc123@gmail.com" style="color:#000000; border:1.5px solid #000000;" required>
-  </div>
-   <div class="col-12">
-    <label for="inputAddress" class="form-label">Address</label>
-    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" style="color:#000000; border:1.5px solid #000000;" >
-  </div>
-  <div class="col-12">
-    <label for="inputAddress2" class="form-label">Address 2</label>
-    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" style="color:#000000; border:1.5px solid #000000;" >
-  </div>
-  <div class="col-md-6">
-    <label for="inputCity" class="form-label">City</label>
-    <input type="text" class="form-control" id="inputCity" placeholder="City" style="color:#000000; border:1.5px solid #000000;" >
-  </div>
-  <div class="col-md-4">
-    <label for="inputState" class="form-label">State</label>
-    <select id="inputState" class="form-select" style="color:#000000; border:1.5px solid #000000;" >
-      <option selected>Choose...</option>
-      <option>CA</option>
-    </select>
-  </div>
-  <div class="col-md-2">
-    <label for="inputZip" class="form-label">Zip</label>
-    <input type="text" class="form-control" id="inputZip" placeholder="#####" style="color:#000000; border:1.5px solid #000000;" >
-  </div>
-  <div class="col-12">
-    <button class= "btn btn-outline-dark btn-lg" type="submit" style="border:3px solid #000000;">Submit form</button>
-  </div> 
-</form> -->
 
 {% endblock %}
 
