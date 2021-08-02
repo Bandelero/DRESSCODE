@@ -7,6 +7,11 @@ h1{
 	padding-top:  165px;
 }
 
+3
+h3 {
+  text-align: center;
+}
+
 hr { background-color: red; height: 1px; border: 0; }
 
 body {
@@ -26,23 +31,38 @@ body {
 }
 
 .servicePageTitle{
-	padding-top:  15px;
-	font-size: 75px;	
+	padding-top:  10px;
+	font-size: 75px;
+  text-align: center;	
 }
 
 #galleryPageTitle{
-	padding-top:  5px;
+	padding-top:  10px;
 	padding-bottom: 5px;
 	font-size: 75px;	
+}
+
+.aboutPageTitle{
+  padding-top:  10px;
+  padding-bottom: 10px;
+  font-size: 75px;
+  text-align: center; 
+}
+
+.eventsPageTitle{
+  padding-top: 10px;
+  font-size: 75px;  
 }
 
 .serviceAlign{
   text-align: center;
 }
 
+
+
 .girl_RedLipstick{
 	display: block;
-  	margin-left: auto;
+  margin-left: auto;
  	margin-right: auto;
 }
 
@@ -116,7 +136,7 @@ font-size: 15px;
   overflow:hidden;
 
 }
-/* This div is going to give me nightmares*/
+
 /* svg {
   position: absolute;
 }
