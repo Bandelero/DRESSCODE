@@ -27,7 +27,7 @@ body {
 
 #frontPageTitle {
 	padding-top:  10px;
-	font-size: 85px;
+	font-size: 75px;
 }
 
 .servicePageTitle{
@@ -49,6 +49,13 @@ body {
   text-align: center; 
 }
 
+.formPageTitle{
+  padding-top:  10px;
+  padding-bottom: 10px;
+  font-size: 75px;
+  text-align: center; 
+}
+
 .eventsPageTitle{
   padding-top: 10px;
   font-size: 75px;  
@@ -56,6 +63,7 @@ body {
 
 .serviceAlign{
   text-align: center;
+  font-size: 32px;
 }
 
 
@@ -150,3 +158,4 @@ font-size: 15px;
   top:50%;
   transform:translate(-50%,-50%);
 }
+
