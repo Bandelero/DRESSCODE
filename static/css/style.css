@@ -27,38 +27,38 @@ body {
 
 #frontPageTitle {
 	padding-top:  10px;
-	font-size: 75px;
+	font-size: 65px;
 }
 
 .servicePageTitle{
 	padding-top:  10px;
-	font-size: 75px;
+	font-size: 65px;
   text-align: center;	
 }
 
 #galleryPageTitle{
 	padding-top:  10px;
 	padding-bottom: 5px;
-	font-size: 75px;	
+	font-size: 65px;	
 }
 
 .aboutPageTitle{
   padding-top:  10px;
   padding-bottom: 70px;
-  font-size: 75px;
+  font-size: 65px;
   text-align: center; 
 }
 
 .formPageTitle{
   padding-top:  10px;
   padding-bottom: 10px;
-  font-size: 75px;
+  font-size: 65px;
   text-align: center; 
 }
 
 .eventsPageTitle{
   padding-top: 10px;
-  font-size: 75px;  
+  font-size: 65px;  
 }
 
 .serviceAlign{
