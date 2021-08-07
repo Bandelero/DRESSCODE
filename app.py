@@ -31,11 +31,11 @@ def form():
 		except Exception as e:
 		    print(e.message)
 		# return redirect(url_for('thankyou.html'))
-		# return render_template('thankyou.html', first=request.form.first, last=request.form.last, email=request.form.email)
+		return render_template('thankyou.html', first=request.form.first, last=request.form.last, email=request.form.email)
 	return render_template('form.html')
 #temporary
 @app.route('/thankyou')
-def thank_you():
+def thankyou():
 	first = request.args.get('first')
 	last = request.args.get('last')
 	email = request.args.get('email')
