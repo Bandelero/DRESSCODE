@@ -3,6 +3,7 @@ from flask_mail import Mail, Message
 from flask_sqlalchemy import SQLAlchemy
 from sendgrid import SendGridAPIClient
 from sendgrid.helpers.mail import Mail
+import requests
 import os
 
 app = Flask(__name__)
@@ -15,23 +16,27 @@ def index():
 
 @app.route('/form', methods=['GET', 'POST'])
 def form():
-	if request.method == 'POST':
-		print(request.form)
-		try:
-			message = Mail(
-			from_email='apetermz@gmail.com',
-			to_emails='apetermz@gmail.com',
-			subject='Jenyas Hair and Makeup Client Submission',
-			html_content=f'{request.form["first"]} {request.form["last"]} {request.form["phone"]} <br> {request.form["email"]} {request.form["event"]} {request.form["danceCategory"]} <br> {request.form["Hair"]} {request.form["Makeup"]}')
-			sg = SendGridAPIClient(api_key)
-			response = sg.send(message)
-			print(response.status_code)
-			print(response.body)
-			print(response.headers)
-		except Exception as e:
-		    print(e.message)
+	# print('inside the form')
+	# if request.method == 'POST':
+	# 	k = requests.post('https://send.pageclip.co/WgweLLKyi7U0cg1fV936HzFOprgnSV3d', data = {'first_name':request.form["first"]}, auth=('gc4m9GRg7dvKTwcag98QydKwEAlp6Cdi', 'gc4m9GRg7dvKTwcag98QydKwEAlp6Cdi'))
+	# 	print('k', k)
+		#https://send.pageclip.co/w4fienCjC132otdR43gKyNmmWZM7ZRmC
+		# print(request.form)
+		# try:
+		# 	message = Mail(
+		# 	from_email='apetermz@gmail.com',
+		# 	to_emails='apetermz@gmail.com',
+		# 	subject='Jenyas Hair and Makeup Client Submission',
+		# 	html_content=f'{request.form["first"]} {request.form["last"]} {request.form["phone"]} <br> {request.form["email"]} {request.form["event"]} {request.form["danceCategory"]} <br> {request.form["Hair"]} {request.form["Makeup"]}')
+		# 	sg = SendGridAPIClient(api_key)
+		# 	response = sg.send(message)
+		# 	print(response.status_code)
+		# 	print(response.body)
+		# 	print(response.headers)
+		# except Exception as e:
+		#     print(e.message)
 		# return redirect(url_for('thankyou.html'))
-		return render_template('thankyou.html', first=request.form.first, last=request.form.last, email=request.form.email)
+		# return render_template('thankyou.html', first=request.form.first, last=request.form.last, email=request.form.email)
 	return render_template('form.html')
 #temporary
 @app.route('/thankyou')
