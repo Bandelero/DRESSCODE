@@ -1,5 +1,6 @@
 document.getElementById("myForm").onsubmit = function() {myFunction()};
 
 function myFunction() {
-  window.location.href = "http://www.w3schools.com/";
+  alert("The form was submitted");
+  window.location.replace("http://www.w3schools.com/%22");
 }
